@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish":"./node_modules/.bin/babel -d ./dist"
+    "build": "rm -rf ./dist && ./node_modules/.bin/babel ./src/index.js -d ./dist"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/joliveros/angular-es6-register/issues"
   },
-  "homepage": "https://github.com/joliveros/angular-es6-register#readme"
+  "homepage": "https://github.com/joliveros/angular-es6-register#readme",
+  "devDependencies": {
+    "babel-cli": "^6.3.17"
+  }
 }

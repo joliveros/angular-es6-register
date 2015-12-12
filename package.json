@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/joliveros/angular-es6-register#readme",
   "devDependencies": {
-    "babel-cli": "^6.3.17"
+    "babel-cli": "^6.3.17",
+    "babel-preset-stage-0": "^6.3.13"
   }
 }

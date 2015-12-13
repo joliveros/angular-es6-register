@@ -2,8 +2,7 @@
  * A helper class to simplify registering Angular components and provide a consistent syntax for doing so.
  */
 export default function register(appName) {
-    let now = new Date();
-    var app = angular.module(appName); //eslint-disable-line no-undef
+    var app = angular.module(appName, []); //eslint-disable-line no-undef
 
     return {
         directive: directive,

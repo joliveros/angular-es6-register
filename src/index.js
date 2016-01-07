@@ -5,17 +5,17 @@ export default function register(appName) {
     var app = angular.module(appName, []); //eslint-disable-line no-undef
 
     var types = {
-        directive: directive,
-        controller: controller,
-        service: service,
-        provider: provider,
-        factory: factory
+        directive: directive.bind(app),
+        controller: controller.bind(app),
+        service: service.bind(app),
+        provider: provider.bind(app),
+        factory: factory.bind(app)
     };
 
     Object.assign(app, types)
 
     return app
-    
+
     function directive(name, constructorFn) {
 
         constructorFn = _normalizeConstructor(constructorFn);

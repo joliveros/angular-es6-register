@@ -1,6 +1,6 @@
 {
   "name": "angular-es6-register",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "",
   "main": "dist/src/index.js",
   "scripts": {

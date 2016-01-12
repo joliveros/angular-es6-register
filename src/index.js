@@ -9,7 +9,8 @@ export default function register(appName) {
         controller: controller.bind(app),
         service: service.bind(app),
         provider: provider.bind(app),
-        factory: factory.bind(app)
+        factory: factory.bind(app),
+        name: appName
     };
 
     Object.assign(app, types)

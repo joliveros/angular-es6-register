@@ -5,11 +5,11 @@ export default function register(appName, modules = []) {
     var app = angular.module(appName, modules); //eslint-disable-line no-undef
 
     return {
-        directive: directive.bind(app),
-        controller: controller.bind(app),
-        service: service.bind(app),
-        provider: provider.bind(app),
-        factory: factory.bind(app),
+        directive,
+        controller,
+        service,
+        provider,
+        factory,
         name: appName
     };
 

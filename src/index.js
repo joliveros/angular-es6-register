@@ -1,8 +1,8 @@
 /**
  * A helper class to simplify registering Angular components and provide a consistent syntax for doing so.
  */
-export default function register(appName) {
-    var app = angular.module(appName, []); //eslint-disable-line no-undef
+export default function register(appName, modules = []) {
+    var app = angular.module(appName, modules); //eslint-disable-line no-undef
 
     return {
         directive: directive.bind(app),
